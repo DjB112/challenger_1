@@ -1,0 +1,356 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    background-image: url("img/avenue.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #adadad;
+ 
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    /* background-color: #ffffffc4; */
+    background: linear-gradient(#ffffffc4, #c9c9c9);
+    height: auto;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
+
+header h1 {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+header img{
+    margin: 0px 1vw;
+    padding: 0;
+    height: 4vh;
+    width: auto;
+}
+nav {
+    width: 50%;
+    text-align: center;
+    margin: 0;
+    padding: 0;    
+}
+
+nav li {
+    height: auto;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #414243;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: Open sans,sans-serif;
+    cursor: pointer;
+    letter-spacing: .05rem;
+    
+}
+
+main{
+    padding: 12vh 0 0 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.texto{
+    padding: 0 2vw 0 2vw;
+    margin: 0;
+    height: auto;
+    width: 44%;
+}
+
+.fondo_original{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 25vh;
+}
+
+.texto p, .encriptado p {
+    margin-bottom: 5px;
+    color: white;
+    font-size: 1rem;
+    font-family: "Roboto Mono","Courier New",monospace;
+}
+
+.texto_original, .texto_encriptado {
+    height: 45vh;
+    width: 100%;
+    /* border: 2px solid rgb(68, 68, 68); */
+    padding: 5px;
+    border-radius: 5px;
+    text-align:left;
+    font-size: 0.9rem;
+    background-color: #ffffff62;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    resize: none;
+}
+.botones{
+    padding: 10px;
+    margin: 0;
+    height: auto;
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.bto {
+
+    background-color: #4CAF50; /* Green */
+    margin: 0 0 10px 0;
+    width:10vw;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Open sans,sans-serif;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.bto:hover{
+    /* opacity: 0.5; */
+    background-color: #347436;
+    transform: scale(0.9);
+}
+
+.bto:active{
+    background-color: #ffffffa9;
+}
+
+.bto_dos{
+    margin: 5px;
+    width:30%;
+    padding: 10px 0 10px 0;
+    font-size: 0.80rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+
+    background-color: #e7e7e7; 
+    color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.bto_dos:hover {
+    background-color: #b7b2b2;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3) inset;
+}
+
+.bto_dos:active{
+    background-color: #ffffffa9;
+}
+
+.encriptado{
+    padding: 0 2vw 0 1vw;
+    margin: 0;
+    height: auto;
+    width: 44%;
+}
+
+.descripcion {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10.5vh;
+    width: 100%;
+    height: 100%;
+    text-align:justify;
+}
+.descripcion h2{
+    margin: 0;
+    margin-bottom: 2px;
+    margin-left: 20px;
+    color: #c2c2c2;
+    font-size: 1rem;
+    font-family: "Open Sans",sans-serif;
+}
+.descripcion p{
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 0.8rem;
+    font-family: "Open Sans",sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    text-shadow: 2px 2px 0px #00000055;
+}
+
+.descripcion ul {
+    margin: 0;
+    margin-left: 40px;
+    margin-right: 20px;
+    padding: 0;
+    font-size: 0.8rem;
+    font-family: "Open Sans",sans-serif;
+    color: white;
+    text-shadow: 2px 2px 0px #00000055;
+}
+
+footer{
+    height: 8vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 0.5rem;
+    background-color: #ffffffc4;
+
+    left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	bottom: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    height: 5vh;
+    width: auto;
+    margin-right: 25px;
+}
+
+footer p {
+    font-size: 0.8rem;
+    font-family: "Roboto Mono","Courier New",monospace;
+    font-weight: bold;
+    margin: 5px 5px 5px 0;
+    padding: 0;
+    color: #414243;
+}
+
+.iconos i{
+    margin: 10px;
+    width: 20px;
+    height: auto;
+}
+
+@media screen and (max-width:800px){
+    main {
+        padding: 8vh 0 0 0;
+    }
+
+    section {
+        padding: 0 30px 0 0;
+    }
+
+    .texto{
+        padding: 0 2vw 0 5vw;
+    }
+
+    .texto p, .encriptado p {
+        font-size: 0.75rem;
+    }
+
+    header{
+        margin: 0;
+        padding: 0;
+        height: 8vh;
+    }
+
+    header img{
+        margin: 1px 0.5vw;
+        padding: 0;
+        height: 2vh;
+        width: auto;
+    }
+    nav a{
+        font-size: 0.6rem;
+        letter-spacing: .03rem;
+        
+    }
+    .bto {
+        margin: 0 0 10px 0;
+        padding: 10px 0;
+        font-size: 0.4rem;
+    }
+
+    .bto_dos{
+        margin: 5px;
+        padding: 10px 0 10px 0;
+        font-size: 0.6rem;
+    }
+
+    .descripcion h2{
+        font-size: 1rem;
+    }
+
+    .descripcion p {
+        font-size: 0.7rem;
+    }
+
+    footer{
+        height: 5vh;
+        margin: 0;
+        padding: 2px;
+        line-height: 0.3rem;
+    }
+
+    footer img{
+        height: 2.5vh;
+        width: auto;
+        margin: 0;
+        margin-right: 5px;
+    }
+    
+    footer p {
+        font-size: 0.3rem;
+    }
+
+    .iconos i{
+        margin: 12px;
+        width: 2px;
+        height: auto;
+    }
+}

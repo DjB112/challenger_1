@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/da5c0d66d8.js" crossorigin="anonymous"></script>
+    <title>Alura Challenges - Encriptador</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="img/logo-one.svg" alt="">
+            <img src="img/logo_oracleAlura.svg" alt="">  
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">&#9679Inicio </a></li>
+                <li><a href="#"> &#9679Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="texto">
+                <div class="fondo_original" id="id_original"></div>               
+                <p>Texto Original:</p>
+                <textarea name="" id="Id_texto" class="texto_original" cols="30" rows="10"></textarea>                
+                <button onclick="copiar_texto();" class="bto_dos" id="bto_copiar"><i class="fa-solid fa-pen-to-square"></i> Copiar</button>
+                <button onclick="borrar_texto_original();" id="bto_borrar" class="bto_dos"><i class="fa-sharp fa-solid fa-trash"></i> Borrar</button>
+            </div>
+            <div class="botones">
+                <button onclick="encriptar();" class="bto" id="bto_encriptar">Encriptar &#9658</button>
+                <button onclick="traducir();" class="bto" id="bto_traducir">&#9668 Traducir</button>
+            </div>
+            <div class="encriptado">
+                <div class="fondo_original" id="id_original_dos"></div>               
+                <p>Texto Encriptado:</p>
+                <textarea name="" id="Id_encriptado" class="texto_encriptado" cols="30" rows="10"></textarea>
+                <button onclick="copiar_encriptado();" class="bto_dos" id="bto_copiar_dos"><i class="fa-solid fa-pen-to-square"></i> Copiar</button>
+                <button onclick="borrar_encriptado_original();" class="bto_dos" id="bto_borrar_dos"><i class="fa-sharp fa-solid fa-trash"></i> Borrar</button>
+            </div>
+        </section>
+        <div class="descripcion">
+            <h2>Descripción: ¡Bienvenidas y bienvenidos a nuestro primer desafío!</h2>
+            <p>Durante estas cuatro semanas, vamos a trabajar en una aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada. Las "llaves" de encriptación que utilizaremos son las siguientes: La letra "e" es convertida para "enter"; La letra "i" es convertida para "imes"; La letra "a" es convertida para "ai"; La letra "o" es convertida para "ober" y La letra "u" es convertida para "ufat". Requisitos:</p>
+            <ul>
+                <li>Debe funcionar solo con letras minúsculas.</li>
+                <li>No deben ser utilizados letras con acentos ni caracteres especiales.</li>
+                <li>Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.</li>
+                <li>La página debe tener campos para
+                    inserción del texto que será encriptado o desencriptado, y el usuario debe poder escoger entre as dos opciones.</li>
+                <li>El resultado debe ser mostrado en la pantalla. Para Reiniciar el Sistema Haga Click en Inicio.</li>
+                <li>Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <img src="img/logo-challenge.svg" alt="">
+        </div>
+        <div>
+            <p>&copy Copyright Challenge Alura - 2024</p>
+            <p>Web Master: David Bustamante</p>
+        </div>
+        <div class="iconos">
+            <a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: #6b6b6b;"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter fa-xl" style="color: #6b6b6b;"></i></a>
+            <a href=""><i class="fa-brands fa-telegram fa-xl" style="color: #6b6b6b;"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin fa-xl" style="color: #6b6b6b;"></i></a>
+        </div>
+    </footer>
+    <script src="encriptar.js"></script>
+</body>
+</html>
+
